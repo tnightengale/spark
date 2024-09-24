@@ -22,7 +22,7 @@ Installation
 PySpark is included in the official releases of Spark available in the `Apache Spark website <https://spark.apache.org/downloads.html>`_.
 For Python users, PySpark also provides ``pip`` installation from PyPI. This is usually for local usage or as
 a client to connect to a cluster instead of setting up a cluster itself.
- 
+
 This page includes instructions for installing PySpark by using pip, Conda, downloading manually,
 and building from the source.
 
@@ -157,7 +157,7 @@ One example of doing this is shown below:
 
     cd spark-\ |release|\-bin-hadoop3
     export SPARK_HOME=`pwd`
-    export PYTHONPATH=$(ZIPS=("$SPARK_HOME"/python/lib/*.zip); IFS=:; echo "${ZIPS[*]}"):$PYTHONPATH
+    export PYTHONPATH=$(ZIPS=("$SPARK_HOME"/python/lib/\*.zip); IFS=:; echo "${ZIPS[\*]}"):$PYTHONPATH
 
 
 Installing from Source
